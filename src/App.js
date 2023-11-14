@@ -1,20 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
 
-
 // Pages
 import ListMovie from "./pages/ListMovie";
 import DetailMovie from "./pages/DetailMovie";
 import Profile from './pages/Profile';
 
-
 // Components
 import Header from "./components/header";
 import Navbar from './components/navbar';
 
-
 import "./App.css";
-
 
 function App() {
   return (
@@ -31,6 +27,4 @@ function App() {
     </div>
   );
 }
-
-
 export default App;

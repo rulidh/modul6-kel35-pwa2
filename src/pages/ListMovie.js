@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-
 // Components
 import Card from "../components/card";
-
-
 
 export default function ListMovie() {
     const [data, setData] = useState(null);
     const [isLoaded, setisLoaded] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [query, setQuery] = useState("One Piece");
-    
-
     
     useEffect(() => {
         const fetchData = async (query) => {
